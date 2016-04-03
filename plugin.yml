@@ -1,0 +1,10 @@
+name: GTip
+main: GAD\Main
+version: 1.0.0
+api: [2.0.0]
+load: POSTWORLD
+author: PocketMine-GAD
+command:
+ gad:
+   description:"发送信息"
+   usage:"/gad"
