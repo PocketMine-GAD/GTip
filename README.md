@@ -1,4 +1,12 @@
 # GTip
-A pocketmine plugins
-#功能
-改变Chat,类似于QChat,插件制作中✔
+A pocketmine plugin
+#TO DO
+Send a tip to a player when he(she) move.
+
+✔world
+✔onlineplayers
+✔ID
+✔item in hand
+✔item count
+and so on....
+
