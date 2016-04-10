@@ -1,6 +1,6 @@
 <?php
 
-namespace GAD;//我就是这么吊，，，
+namespace GAD;//this plugin is very simple!!  :)
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\plugin\Plugin;
@@ -16,24 +16,29 @@ use pocketmine\event\player\PlayerRespawnEvent;
 use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\inventory\Inventory;
 use pocketmine\utils\Config;
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
-//哈哈哈哈哈哈哈。。小学生走开
+//You can help me to finish and improve this plugin,because i am a 15 years boy and i am new in pocketmine plugin!!!!!
 class GAD extends PluginBase implements Listener{
 public function onEnable(){
 $this->getServer()->getPluginManager()->registerEvents($this,$this);
-$this->getLogger()->info("插件已加载哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈");
+$this->getLogger()->info("##################################");
+$this->getLogger()->info("GTip Enable!!");
+$this->getLogger()->info(" ########################################");
 $this->saveDefaultConfig();
         $this->reloadConfig();
 }
-//我是PocketMine-GAD!
+//i am PocketMine-GAD!
+//Github:@PocketMine-GAD
+//twitter:@嚻兏縈飓
+//QQ:2296342883
 public function onDisable(){
-$this->getLogger()->info("插件加载失败  我擦");
+$this->getLogger()->info("################GTip disable!##############");
  }
 public function onJoin(PlayerJoinEvent $event){
 $player=$event->getPlayer();
+$gad=$this->getConfig();
+$welcome=$gad->get("welcome");
 $name=$player->getName();
-$player->sendMessage("§e§lWelcome to §a§lGAD §e§lServer!");
+$player->sendTip("$name. $welcome");
 }
 public function onMove(PlayerMoveEvent $m){
 $player=$m->getPlayer();
