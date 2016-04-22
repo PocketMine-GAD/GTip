@@ -65,6 +65,7 @@ $fk=$item->getName();//方块变量
 $player->sendMessage("§a§lYou placed a§e§l". $fk ."§a§lthere!");
 }
 }
+//tomorrow will add handitem!
 
 
 
