@@ -10,3 +10,5 @@ Send a tip to a player when he(she) move.
 ✔item count
 and so on....
 
+my QQ 2296342883
+
