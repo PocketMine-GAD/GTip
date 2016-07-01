@@ -9,6 +9,7 @@ Send a tip to a player when he(she) move.
 ✔item in hand
 ✔item count
 and so on....
+QQ 2296342883
 
-my QQ 2296342883
+updating！！
 
